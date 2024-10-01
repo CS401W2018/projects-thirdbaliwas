@@ -1,19 +1,42 @@
+
 body {
-    color:aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:medium;
-    background-color: rgb(6, 78, 104);
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333; 
+    background-color: #c2c2d3; 
 }
 
-#una{
-    color: rgb(67, 0, 100);
-    font-size: x-large;
+h2 {
+    font-size: 24px;
+    color: #1a1aff; 
 }
 
-.pangalwa{
-    color: rgb(127, 33, 148);
+.deemphasized {
+    color: #888888; 
 }
 
-.pangatlo {
-    background-color: rgb(0, 2, 135);
+#emphasized-text {
+    color: #ff6347; 
+    font-weight: bold;
+}
+
+ul {
+    list-style-type: square;
+    margin: 20px;
+}
+
+li {
+    margin: 10px 0;
+}
+
+span.highlight {
+    background-color: #ffff66;
+    padding: 2px;
+}
+
+
+.hero-section {
+    padding: 50px;
+    background-color: #4CAF50;
+    color: white; 
 }
