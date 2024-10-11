@@ -1,0 +1,41 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    width: 100px;
+    background-color: aquamarine;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: none;
+}
+
+nav a {
+    display: block;
+    background-color: cadetblue;
+    color: white;
+    border-bottom: thin solid white;
+    padding: 10px 20px;
+    float: left;
+    margin-left: 10px;
+}
+
+#treepic {
+    width: 500px;
+    border: thin solid black;
+    float: right;
+}
+
+.end {
+    clear: both;
+}
+
+#treepic img {
+    width: 500px;
+}
