@@ -1,18 +1,74 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #aaa;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
 }
 
-#wrapper {
+header {
+    background-image: url('invoker2.jpg');
+    background-size: cover;
+    background-origin: border-box;
+    background-clip: padding-box;
+    padding: 20px;
+    color: white;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: white;
-    max-width: 700px;
 }
 
-nav {
-    background-color: antiquewhite;
-    height: 200px;
-    margin-top: 40px;
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    background-color: #333;
+    color: #ffcc00;
+}
+
+.wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+main {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.float-left {
+    float: left;
+    margin-right: 20px;
+}
+
+p {
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    text-align: justify;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
 }
