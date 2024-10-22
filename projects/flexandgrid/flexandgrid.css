@@ -1,4 +1,106 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    padding: 0%;
+    list-style: none;
+    justify-content: space-around;
+    background-color: slategray;
+}
+
+nav ul li a {
+    color: white;
+    display: block;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: flex;
+}
+
 nav a {
     display: block;
     display: flex;
+}
+
+nav ul li a:hover {
+    background-color: grey;
+}
+
+.mainrow {
+    display: flex;
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+aside {
+    margin-right: 20px;
+    background-color: beige;
+    padding: 20px;
+    width: 20%;
+}
+
+aside h2 {
+    margin-top: 0;
+}
+
+main {
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    display: grid;
+    width: 80%;
+}
+
+.card {
+    background-color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid antiquewhite;
+}
+
+.card img {
+    margin-bottom: 10px;
+    height: auto;
+    width: 100%;
+    max-width: 200px;
+}
+
+.card h3 {
+    margin: 5px 0;
+}
+
+footer {
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background-color: darkgray;
+    margin-top: 20px;
+}
+
+.links {
+    gap: 5px;
+    grid-template-columns: repeat(5,1fr);
+    display: grid;
+}
+
+.links a {
+    background-color: darkslategray;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    display: block;
+}
+
+.links a:hover {
+    background-color: grey;
 }
