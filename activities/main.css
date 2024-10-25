@@ -45,3 +45,20 @@ nav a:hover {
 .card img {
     width: 100%;
 }
+
+@media only screen and (max-width: 650px) {
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        border-bottom: thin solid white;
+        padding-left: 50px;
+    }
+
+    .card {
+        width: 100%;
+        margin: 10px;
+    }
+    
+}
