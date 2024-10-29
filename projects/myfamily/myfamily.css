@@ -7,7 +7,97 @@ body {
 
 header {
     background-color: black;
-    padding: 20px;
+    width: 100%;
     color: white;
-    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul {
+    padding: 1rem 0;
+    justify-content: space-around;
+    display: flex;
+    background-color: antiquewhite;
+}
+
+nav a:hover {
+    background-color: burlywood;
+}
+
+nav ul a{
+    margin:  0px 10px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    padding: 20px 15px;
+}
+
+.mainrow {
+    padding-bottom: 15px;
+    display: flex;
+}
+
+aside {
+    width: 20%;
+    background-color: antiquewhite;
+}
+
+article {
+    box-shadow: 5px 5px 9px black;
+    width: 30%;
+}
+
+figure {
+    padding: 0;
+    margin: 0;
+}
+
+figure img {
+    max-width: 50%;
+}
+
+main {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer {
+    text-align: left;
+    color: white;
+    padding: 20px;
+    background-color: black;
+    margin-top: 20px;
+}
+
+@media (max-width: 600px) {
+    .mainrow {
+        flex-direction: column;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        order: -1;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    article {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    aside {
+        width: 100%;
+    }
+}
+
+@media print {
+    header, footer, nav {
+        display: none;
+    }
 }
