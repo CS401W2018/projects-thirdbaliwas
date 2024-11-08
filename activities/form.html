@@ -12,6 +12,8 @@
     </header>
     <main>
         <form action="#" method="post">
+        <fieldset>
+            <legend>Sign Up</legend>
             <div class="form-row">
                 <label for="fname">First Name:</label>
                 <input type="text" name="first" value="Joe" required>
@@ -31,7 +33,7 @@
                     Remember
                 </label>
             </div>
-            <div class="form=row">
+            <div class="form-row">
                 <label for="state">State</label>
                 <select name="state" id="state">
                     <option value="blank"></option>
@@ -45,8 +47,15 @@
                 <textarea name="comments" id="comments"></textarea>
             </div>
             <div class="form-row">
+                Class:
+                <label><input type="radio" name="class" value="freshman">Freshman</label>
+                <label><input type="radio" name="class" value="sophomore">Sophomore</label>
+            </div>
+            <div class="form-row">
+                <div class="spacer"></div>
                 <input type="submit">
             </div>
+        </fieldset>
         </form>
     </main>
     <footer>
