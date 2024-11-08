@@ -11,11 +11,42 @@
         <h1>Web Design</h1>
     </header>
     <main>
-        <form action="#" method="get">
-            First Name: <input type="text" name="first"><br>
-            Last Name: <input type="text" name="last"><br>
-            Password: <input type="password" name="pass"><br>
-            <input type="submit">
+        <form action="#" method="post">
+            <div class="form-row">
+                <label for="fname">First Name:</label>
+                <input type="text" name="first" value="Joe" required>
+            </div>
+            <div class="form-row">
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="last" placeholder="Last Name">
+            </div>
+            <div class="form-row">
+                <label for="pass">Password:</label>
+                <input type="password" name="pass" id="pass">
+            </div>
+            <div class="check-row">
+                <div class="spacer"></div>
+                <label>
+                    <input type="checkbox" name="remember" checked>
+                    Remember
+                </label>
+            </div>
+            <div class="form=row">
+                <label for="state">State</label>
+                <select name="state" id="state">
+                    <option value="blank"></option>
+                    <option value="CA">California</option>
+                    <option value="HI">Hawaii</option>
+                    <option value="UT">Utah</option>
+                </select>
+            </div>
+            <div class="form-row">
+                <label for="comments">Comments</label>
+                <textarea name="comments" id="comments"></textarea>
+            </div>
+            <div class="form-row">
+                <input type="submit">
+            </div>
         </form>
     </main>
     <footer>
