@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form-row {
+    margin-top: 15px;
+    gap: 15px;
+    display: flex;
+}
+
+.form-row input {
+    border-radius: 10px;
+    padding: 10px;
+    background-color: whitesmoke;
+    margin-left: 0;
+}
+
+.form-row input:focus {
+    background-color: wheat;
+}
+
+.form-row label {
+    width: 100px;
+    text-align: left;
+    margin: auto 0;
+}
+
+fieldset {
+    padding: 20px;
+    width: 50%;
+    margin: auto;
+    background-origin: 15px;
+    border: 3px solid black;
+    box-shadow: 0 3px 5px black;
+}
+
+input[type="text"], input[type="password"], input[type="email"], input[type="date"], textarea, select {
+    padding: 10px;
+    border-radius: 5px;
+    flex: 1;
+    border: 1px solid whitesmoke;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: whitesmoke;
+    color: black;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button[type="submit"]:hover {
+    background-color: beige;
+}
+
+@media (max-width: 800px) {
+    .form-row {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    input[type="text"], input[type="password"], input[type="email"], textarea {
+        width: 80%;
+    }
+
+    button[type="submit"] {
+        padding: 10px;
+        width: 100%;
+        font-size: 20px;
+    }
+}
