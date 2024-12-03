@@ -1,0 +1,58 @@
+<?php
+// Check if form is submitted
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Collect and sanitize form data
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $favorite_emcee = htmlspecialchars($_POST['favorite_emcee']);
+    $comments = htmlspecialchars($_POST['comments']);
+} else {
+    // If the form is not submitted, redirect back to the feedback page
+    header("Location: feedbacks.html");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Confirmation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="history.html">Learn about FlipTop's history</a></li>
+                <li><a href="notable.html">Discover iconic battles and emcees</a></li>
+                <li><a href="culture.html">See FlipTop's cultural impact</a></li>
+                <li><a href="schedandrank.html">View event schedules</a></li>
+                <li><a href="feedbacks.html">Share your thoughts</a></li>
+            </ul>
+        </nav>
+        <div class="first">
+            <h1>Feedback Confirmation</h1>
+        </div>
+    </header>
+    <main>
+        <section class="containerone">
+            <h2>Thank you for your feedback, <php echo $name; ?>!</h2>
+            <p>We appreciate you taking the time to share your thoughts about FlipTop. Here’s a summary of your submission:</p>
+            <div class="feedback-summary">
+                <p><strong>Name:</strong> <php echo $name; ?></p>
+                <p><strong>Email:</strong> <php echo $email; ?></p>
+                <p><strong>Favorite Emcee:</strong> <php echo $favorite_emcee; ?></p>
+                <p><strong>Comments:</strong></p>
+                <p><php echo nl2br($comments); ?></p>
+            </div>
+            <p>Your feedback helps us improve the FlipTop experience!</p>
+        </section>
+    </main>
+    <footer>
+        &copy;2024 Third Baliwas
+    </footer>
+</body>
+</html>
