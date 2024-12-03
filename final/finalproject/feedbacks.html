@@ -3,9 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul class="links">
+                <li><a href="main.html">Home</a></li>
+                <li><a href="history.html">Learn about FlipTop's history</a></li>
+                <li><a href="notable.html">Discover iconic battles and emcees</a></li>
+                <li><a href="culture.html">See FlipTop's cultural impact</a></li>
+                <li><a href="schedandrank.html">View event schedules</a></li>
+                <li><a href="feedbacks.html" class="active">Share your thoughts</a></li>
+            </ul>
+        </nav>
+        <div class="first">
+            <h1>Share Your Feedback</h1>
+            <p>We value your thoughts and opinions about FlipTop!</p>
+        </div>
+    </header>
+    <main>
+        <section class="containerone">
+            <h2>Submit Your Feedback</h2>
+            <form action="process_feedback.php" method="POST" class="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                
+                <label for="favorite-emcee">Favorite Emcee:</label>
+                <select id="favorite-emcee" name="favorite_emcee" required>
+                    <option value="" disabled selected>Select an Emcee</option>
+                    <option value="Loonie">Loonie</option>
+                    <option value="Smugglaz">Smugglaz</option>
+                    <option value="Aklas">Aklas</option>
+                    <option value="Shehyee">Shehyee</option>
+                    <option value="Hazky">Hazky</option>
+                    <option value="Sinio">Sinio</option>
+                    <option value="Tipsy D">Tipsy D</option>
+                    <option value="Batas">Batas</option>
+                    <option value="Shernan">Shernan</option>
+                </select>
+                
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Share your thoughts about FlipTop..." required></textarea>
+                
+                <button type="submit" class="submit-button">Submit Feedback</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        &copy;2024 Third Baliwas
+    </footer>
+    <script src="feedback.js"></script>
 </body>
 </html>

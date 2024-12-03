@@ -107,6 +107,155 @@ main {
     line-height: 1.8;
 }
 
+.emcee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1em;
+    margin-top: 1em;
+}
+
+.emcee {
+    background: #1a1a1a;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+.emcee-photo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.emcee h3 {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+}
+
+.containervideo {
+    margin: 30px 0;
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    border-left: 5px solid red;
+    border-radius: 5px;
+}
+
+.containervideo iframe {
+    margin: 15px auto;
+    max-width: 100%;
+    height: auto;
+    border: none;
+}
+
+.containervideo a {
+    color: red;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.containervideo a:hover {
+    color: white;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background-color: #222;
+    color: white;
+}
+
+table th, table td {
+    border: 1px solid red;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: red;
+    color: black;
+    font-weight: bold;
+}
+
+table tr:nth-child(even) {
+    background-color: #333;
+}
+
+table tr:nth-child(odd) {
+    background-color: #444;
+}
+
+table tr:hover {
+    background-color: #555;
+    color: red;
+}
+
+.containerone h2, .containertwo h2 {
+    color: red;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.feedback-form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+    border: 1px solid red;
+    border-radius: 5px;
+}
+
+.feedback-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: white;
+    font-weight: bold;
+}
+
+.feedback-form input,
+.feedback-form select,
+.feedback-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid red;
+    border-radius: 3px;
+    background-color: #333;
+    color: white;
+    font-size: 1rem;
+}
+
+.feedback-form input::placeholder,
+.feedback-form textarea::placeholder {
+    color: #bbb;
+}
+
+.feedback-form select option {
+    color: black;
+    background-color: white;
+}
+
+.feedback-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: red;
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.feedback-form button:hover {
+    background-color: darkred;
+    color: white;
+}
+
 footer {
     background-color: #111;
     color: #fff;
