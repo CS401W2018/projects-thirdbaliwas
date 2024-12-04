@@ -256,6 +256,25 @@ table tr:hover {
     color: white;
 }
 
+.references {
+    list-style-type: square;
+    margin: 20px 0;
+    padding: 0;
+}
+
+.references li {
+    margin-bottom: 10px;
+}
+
+.references a {
+    color: #ff4d4d; /* Matches red theme */
+    text-decoration: none;
+}
+
+.references a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #111;
     color: #fff;
