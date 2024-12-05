@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = htmlspecialchars($_POST['email']);
     $favorite_emcee = htmlspecialchars($_POST['favorite_emcee']);
     $comments = htmlspecialchars($_POST['comments']);
-} else {
+}else {
     // If the form is not submitted, redirect back to the feedback page
     header("Location: feedbacks.html");
     exit();
@@ -40,16 +40,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </header>
     <main>
         <section class="containerone">
-            <h2>Thank you for your feedback, <php echo $name; ?>!</h2>
-            <p>We appreciate you taking the time to share your thoughts about FlipTop. Here’s a summary of your submission:</p>
-            <div class="feedback-summary">
-                <p><strong>Name:</strong> <php echo $name; ?></p>
-                <p><strong>Email:</strong> <php echo $email; ?></p>
-                <p><strong>Favorite Emcee:</strong> <php echo $favorite_emcee; ?></p>
-                <p><strong>Comments:</strong></p>
-                <p><php echo nl2br($comments); ?></p>
-            </div>
-            <p>Your feedback helps us improve the FlipTop experience!</p>
+            <h2>Thank you for your feedback!</h2>
+            <p>We appreciate you taking the time to share your thoughts about FlipTop. Your feedback helps us improve the FlipTop experience!</p>
         </section>
     </main>
     <footer>
